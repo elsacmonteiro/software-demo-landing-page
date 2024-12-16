@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Demo Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Demo Request</h1>
+    <p id="description">Please fill out the form to register your interest in a software demonstration</p>
+    
+    <form id="survey-form" action="https://example.com/submit" method="post">
+        <!-- Name -->
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" name="name" placeholder="Enter your fist and last name" required>
+        
+        <!-- Email -->
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" name="email" placeholder="Enter your professional email" required>
+        
+        <!-- Number of Employees -->
+        <label id="number-label" for="number">Number of Employees:</label>
+        <input id="number" type="number" name="number" placeholder="Enter number of employees" min="1" max="10000" required>
+        
+        <!-- Industry -->
+        <label for="dropdown">Industry:</label>
+        <select id="dropdown" name="industry" required>
+            <option value="" disabled selected>Select your industry</option>
+            <option value="retail">Retail</option>
+            <option value="technology">Technology</option>
+            <option value="education">Education</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <!-- Demo Type -->
+        <p>Type of Demo:</p>
+        <label>
+            <input type="radio" name="demo-type" value="online" required> Online (via Zoom/Teams)
+        </label>
+        <label>
+            <input type="radio" name="demo-type" value="in-person"> In-Person
+        </label>
+        
+        <!-- Features of Interest -->
+        <p>Features of Interest (check all that apply):</p>
+        <label>
+            <input type="checkbox" name="features" value="detailed-reports"> Detailed Reports and Dashboards
+        </label>
+        <label>
+            <input type="checkbox" name="features" value="system-integration"> System Integrations
+        </label>
+        <label>
+            <input type="checkbox" name="features" value="process-automation"> Process Automation - AI
+        </label>
+        <label>
+            <input type="checkbox" name="features" value="technical-support"> Technical Support
+        </label>
+        
+        <!-- Additional Comments -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Share specific needs or questions"></textarea>
+        
+        <!-- Submit Button -->
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>

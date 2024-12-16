@@ -1,0 +1,104 @@
+/* General Page Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-image: url(https://images.unsplash.com/photo-1567359781514-3b964e2b04d6?q=80&w=2160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center;
+    color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 2rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.8);
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    background-color: #111;
+    color: #f4f4f4;
+}
+
+select {
+    background-color: #111;
+    color: #f4f4f4;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: #7D00FF;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #5A00B2;
+}
+
+button:active {
+    background-color: #006699;
+    transform: scale(0.98);
+}
+
+textarea {
+    height: 100px;
+    background-color: #111;
+    color: #f4f4f4;
+}
